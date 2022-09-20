@@ -21,7 +21,7 @@ function onLoginBtn(event) {
   } = event.currentTarget;
 
   if (email.value === "" || password.value === "") {
-    alert("Заповни всі поля, друже!");
+    return alert("Заповни всі поля, друже!");
   }
   console.log(`Login: ${email.value}, Password: ${password.value}`);
   event.currentTarget.reset();
