@@ -15,8 +15,12 @@ const images = [
 
 const gallery = document.querySelector(".gallery");
 
+let galleryArr = [];
+
 for (const image of images) {
   const li = `<li class="gallery__item"><img src="${image.url}" alt="${image.alt}"></li>`;
 
-  gallery.insertAdjacentHTML("beforeend", li);
+  galleryArr.push(li);
 }
+
+gallery.insertAdjacentHTML("beforeend", galleryArr);
